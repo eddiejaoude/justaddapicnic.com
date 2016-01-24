@@ -5,11 +5,11 @@ class Beaches < Mustache
 	#Need this page to set the template
 	#https://github.com/mustache/mustache/blob/master/lib/mustache.rb
 	self.template_file = "./templates/beaches.html"
-	@@EmptyDataHash = {"BeachName"=>"EmptyBeach",
- 				"BeachCSS"=>"./css/emptyBeach.css",
- 				"BeachHeader"=>"This is an empty beach",
+	@@EmptyDataHash = {"Name"=>"EmptyBeach",
+ 				"CSS"=>"./css/emptyBeach.css",
+ 				"Header"=>"This is an empty beach",
  				"Comments"=>
-  					[{"Comment"=>"This is the first comment"}]}
+  					[{"Comment"=>"This is the only comment"}]}
 
 	def loadJSONData jsonFilePath
 		begin
@@ -21,17 +21,17 @@ class Beaches < Mustache
 
 	def beachTitle
 		if @LoadedDataHash.nil? then
-			return @@EmptyDataHash["BeachName"]
+			return @@EmptyDataHash["Name"]
 		else
-			return @LoadedDataHash["BeachName"]
+			return @LoadedDataHash["Name"]
 		end
 	end
 
 	def beachHeader
 		if @LoadedDataHash.nil? then
-			return @@EmptyDataHash["BeachHeader"]
+			return @@EmptyDataHash["Header"]
 		else
-			return @LoadedDataHash["BeachHeader"]
+			return @LoadedDataHash["Header"]
 		end
 
 	end
@@ -44,11 +44,15 @@ class Beaches < Mustache
 		end
 	end
 
+	def beachMe
+		return '<link rel="stylesheet" href="./empty.css"'
+	end
+
 	def beachCSS
 		if @LoadedDataHash.nil? then
-			return @@EmptyDataHash["beachCSS"]
+			return @@EmptyDataHash["CSS"]
 		else
-			return @LoadedDataHash["beachCSS"]
+			return @LoadedDataHash["CSS"]
 		end
 	end
 
