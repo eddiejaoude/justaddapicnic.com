@@ -38,7 +38,7 @@ class Beaches < Mustache
 
 	def comments
 		if @LoadedDataHash.nil? then
-			return @@EmptyDataHash["Comments"][0]
+			return @@EmptyDataHash["Comments"]
 		else
 			return @LoadedDataHash["Comments"]
 		end
