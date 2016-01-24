@@ -1,0 +1,10 @@
+{
+	"BeachName" : "Test Beach",
+	"BeachCSS" : "./css/TestBeach.css",
+	"BeachHeader" : "This is a test beach in Kent",
+	"Comments" : [
+		{"Comment": "This is the first comment"},
+		{"Comment" : "This is the second comment"},
+		{"Comment" : "This is the third comment"}
+	]
+}
