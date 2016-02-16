@@ -1,5 +1,5 @@
-require 'Mustache'
-require 'Json'
+require 'mustache'
+require 'json'
 
 class Beaches < Mustache
 	#Need this page to set the template

@@ -1,4 +1,4 @@
-require 'Mustache'
+require 'mustache'
 
 class MustacheTempate1 < Mustache
 	#Need this page to set the template
