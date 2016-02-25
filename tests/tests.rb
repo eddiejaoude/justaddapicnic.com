@@ -1,4 +1,4 @@
-load 'destinations.rb'
+ 'destinations.rb'
 require 'test-unit'
 
 

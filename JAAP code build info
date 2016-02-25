@@ -1,0 +1,13 @@
+JAAP code build
+	Git pull
+	rake test
+	rake build
+
+	cp build artefacts to another git repo - JAAP-Deployment
+	Push git origin master for JAAP
+
+Build Process
+	require mustache
+	foreach .json in dir do
+		instantiate with template importing the data to complete
+		write out the output to an artefacts dir
