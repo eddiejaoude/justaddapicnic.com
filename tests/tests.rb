@@ -1,4 +1,4 @@
- 'destinations.rb'
+require_relative '../destinations.rb'
 require 'test-unit'
 
 
