@@ -10,6 +10,13 @@ class Destination < Mustache
                      "Header"=>"This is an empty beach",
                      "Comments"=>
                      [{"Comment"=>"This is the only comment"}]}
+  
+
+  @@EmptyDataHash.each do | pair |
+    key=pair[0].to_sym
+    val = pair[1]
+    self[key] = val
+  end
 
   def loadJSONData jsonFilePath
     begin
